@@ -1,0 +1,333 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    tools:context="com.example.pat.royalescrapper.ProfileActivity"
+    tools:showIn="@layout/activity_profile">
+
+    <LinearLayout
+        android:layout_marginTop="20dp"
+        android:layout_marginLeft="5dp"
+        android:layout_marginRight="5dp"
+        android:layout_marginBottom="5dp"
+        android:padding="10dp"
+        android:orientation="horizontal"
+        android:background="@color/colorPrimary"
+        android:id="@+id/headerRl"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:id="@+id/playerLeveltv"
+            android:textSize="16sp"
+            android:textStyle="bold"
+            android:textColor="@android:color/white"
+            android:text="10"
+            android:gravity="center_vertical"
+            android:layout_marginRight="15dp"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent" />
+
+        <TextView
+            android:id="@+id/playerNametv"
+            android:textSize="16sp"
+            android:textStyle="bold"
+            android:textColor="@android:color/white"
+            android:text="AMIGURUMI"
+            android:gravity="center_vertical"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_below="@id/headerRl"
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <LinearLayout
+                android:padding="5dp"
+                android:layout_margin="5dp"
+                android:background="@color/colorBlue"
+                android:orientation="vertical"
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="60dp">
+
+                <TextView
+                    android:textColor="@android:color/white"
+                    android:textSize="12sp"
+                    android:text="CLAN"
+                    android:textStyle="bold"
+                    android:gravity="center"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content" />
+
+                <TextView
+                    android:id="@+id/clantv"
+                    android:textSize="11sp"
+                    android:textColor="@android:color/white"
+                    android:text="MADRID PAKETES"
+                    android:gravity="bottom|center_horizontal"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_margin="5dp"
+                android:padding="5dp"
+                android:background="@color/colorBlue"
+                android:orientation="vertical"
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="60dp">
+
+                <TextView
+                    android:textColor="@android:color/white"
+                    android:textSize="11sp"
+                    android:text="Highest Trophies"
+                    android:textAllCaps="true"
+                    android:textStyle="bold"
+                    android:gravity="center"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content" />
+
+                <TextView
+                    android:id="@+id/highestTrophiestv"
+                    android:textSize="11sp"
+                    android:textColor="@android:color/white"
+                    android:text="3200"
+                    android:gravity="bottom|center_horizontal"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_margin="5dp"
+                android:padding="5dp"
+                android:background="@color/colorBlue"
+                android:orientation="vertical"
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="60dp">
+
+                <TextView
+                    android:textColor="@android:color/white"
+                    android:textSize="11sp"
+                    android:textAllCaps="true"
+                    android:text="Last Known Trophies"
+                    android:textStyle="bold"
+                    android:gravity="center"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content" />
+
+                <TextView
+                    android:id="@+id/lastKnownTrophiestv"
+                    android:gravity="bottom|center_horizontal"
+                    android:textSize="11sp"
+                    android:textColor="@android:color/white"
+                    android:text="2500"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent" />
+            </LinearLayout>
+        </LinearLayout>
+
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <LinearLayout
+                android:padding="5dp"
+                android:layout_margin="5dp"
+                android:background="@color/colorBlue"
+                android:orientation="vertical"
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="60dp">
+
+                <TextView
+                    android:textColor="@android:color/white"
+                    android:textSize="12sp"
+                    android:text="challenge cards won"
+                    android:textAllCaps="true"
+                    android:textStyle="bold"
+                    android:gravity="center"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content" />
+
+                <TextView
+                    android:id="@+id/challengeCardsWontv"
+                    android:textSize="11sp"
+                    android:textColor="@android:color/white"
+                    android:text="120"
+                    android:gravity="bottom|center_horizontal"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_margin="5dp"
+                android:padding="5dp"
+                android:background="@color/colorBlue"
+                android:orientation="vertical"
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="60dp">
+
+                <TextView
+                    android:textColor="@android:color/white"
+                    android:textSize="11sp"
+                    android:text="Tournaments Cards Won"
+                    android:textAllCaps="true"
+                    android:textStyle="bold"
+                    android:gravity="center"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content" />
+
+                <TextView
+                    android:id="@+id/tournamentsCardsWontv"
+                    android:textSize="11sp"
+                    android:textColor="@android:color/white"
+                    android:text="214"
+                    android:gravity="bottom|center_horizontal"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_margin="5dp"
+                android:padding="5dp"
+                android:background="@color/colorBlue"
+                android:orientation="vertical"
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="60dp">
+
+                <TextView
+                    android:textColor="@android:color/white"
+                    android:textSize="11sp"
+                    android:textAllCaps="true"
+                    android:text="Total Donations"
+                    android:textStyle="bold"
+                    android:gravity="center"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content" />
+
+                <TextView
+                    android:id="@+id/totalDonationstv"
+                    android:gravity="bottom|center_horizontal"
+                    android:textSize="11sp"
+                    android:textColor="@android:color/white"
+                    android:text="3271"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent" />
+            </LinearLayout>
+        </LinearLayout>
+
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <LinearLayout
+                android:padding="5dp"
+                android:layout_margin="5dp"
+                android:background="@color/colorBlue"
+                android:orientation="vertical"
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="60dp">
+
+                <TextView
+                    android:textColor="@android:color/white"
+                    android:textSize="12sp"
+                    android:text="Best Season Rank"
+                    android:textAllCaps="true"
+                    android:textStyle="bold"
+                    android:gravity="center"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content" />
+
+                <TextView
+                    android:id="@+id/bestSeasonRanktv"
+                    android:textSize="11sp"
+                    android:textColor="@android:color/white"
+                    android:text="0"
+                    android:gravity="bottom|center_horizontal"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_margin="5dp"
+                android:padding="5dp"
+                android:background="@color/colorBlue"
+                android:orientation="vertical"
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="60dp">
+
+                <TextView
+                    android:textColor="@android:color/white"
+                    android:textSize="11sp"
+                    android:text="Previous Season Rank"
+                    android:textAllCaps="true"
+                    android:textStyle="bold"
+                    android:gravity="center"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content" />
+
+                <TextView
+                    android:id="@+id/previousSeasonRanktv"
+                    android:textSize="11sp"
+                    android:textColor="@android:color/white"
+                    android:text="0"
+                    android:gravity="bottom|center_horizontal"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_margin="5dp"
+                android:padding="5dp"
+                android:background="@color/colorBlue"
+                android:orientation="vertical"
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="60dp">
+
+                <TextView
+                    android:textColor="@android:color/white"
+                    android:textSize="11sp"
+                    android:textAllCaps="true"
+                    android:text="Legendary Trophies"
+                    android:textStyle="bold"
+                    android:gravity="center"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content" />
+
+                <TextView
+                    android:id="@+id/legendaryTrophiestv"
+                    android:gravity="bottom|center_horizontal"
+                    android:textSize="11sp"
+                    android:textColor="@android:color/white"
+                    android:text="0"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent" />
+            </LinearLayout>
+        </LinearLayout>
+    </LinearLayout>
+
+
+</RelativeLayout>

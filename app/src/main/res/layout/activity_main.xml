@@ -1,0 +1,31 @@
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <TextView
+        android:padding="10dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:text="Introduce your player reference (without #) and get all your profile information :)"
+        android:id="@+id/explanation"/>
+
+    <EditText
+        android:textSize="50dp"
+        android:layout_centerInParent="true"
+        android:layout_centerHorizontal="true"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="2VUPVPRRV"
+        android:id="@+id/referenceEt"/>
+
+    <Button
+        android:layout_alignParentBottom="true"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:textColor="@android:color/white"
+        android:background="@color/colorPrimary"
+        android:text="SCRAP PROFILE !"
+        android:id="@+id/Scrapbtn"/>
+</RelativeLayout>

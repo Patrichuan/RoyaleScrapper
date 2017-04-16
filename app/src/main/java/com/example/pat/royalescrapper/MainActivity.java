@@ -8,6 +8,7 @@ import android.util.Log;
 import android.view.View;
 import android.widget.Button;
 import android.widget.EditText;
+import android.widget.RelativeLayout;
 
 import com.example.pat.royalescrapper.model.Chest;
 import com.example.pat.royalescrapper.model.Deck;
@@ -28,12 +29,14 @@ public class MainActivity extends AppCompatActivity {
     private static final String BASE_URL = "http://statsroyale.com/profile/";
     private String playerRef = "";
     private Profile myProfile;
+    private RelativeLayout loadingRl;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
 
+        loadingRl = (RelativeLayout) findViewById(R.id.loadingRl);
         final EditText referenceEt = (EditText) findViewById(R.id.referenceEt);
         Button Scrapbtn = (Button) findViewById(R.id.Scrapbtn);
         Scrapbtn.setOnClickListener(new View.OnClickListener() {
@@ -261,6 +264,7 @@ public class MainActivity extends AppCompatActivity {
             // Here you can show progress bar or something on the similar lines.
             // Since you are in a UI thread here.
             super.onPreExecute();
+            loadingRl.setVisibility(View.VISIBLE);
         }
 
         @Override
@@ -284,7 +288,6 @@ public class MainActivity extends AppCompatActivity {
             // After completing execution of given task, control will return here.
             // Hence if you want to populate UI elements with fetched data, do it here.
             super.onPostExecute(profile);
-
             Bundle bundle = new Bundle();
             bundle.putSerializable("myProfile", profile);
             Intent intent = new Intent(MainActivity.this, ProfileActivity.class);
